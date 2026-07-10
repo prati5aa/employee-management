@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "password",
+      "name": "Admin"
+    }
+  ],
+
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Pratik",
+      "lastName": "Thapa",
+      "email": "pratik@gmail.com",
+      "phone": "9800000001",
+      "department": "IT",
+      "designation": "Frontend Developer",
+      "salary": 55000,
+      "joiningDate": "2025-01-15",
+      "status": "Active"
+    },
+
+    {
+      "id": 2,
+      "firstName": "Sweta",
+      "lastName": "Sharma",
+      "email": "sweta@gmail.com",
+      "phone": "9800000002",
+      "department": "Marketing",
+      "designation": "Digital Marketing Specialist",
+      "salary": 48000,
+      "joiningDate": "2024-08-10",
+      "status": "Active"
+    },
+
+    {
+      "id": 3,
+      "firstName": "Ram",
+      "lastName": "Poudel",
+      "email": "ram@gmail.com",
+      "phone": "9800000003",
+      "department": "IT",
+      "designation": "Backend Developer",
+      "salary": 65000,
+      "joiningDate": "2023-11-05",
+      "status": "Active"
+    },
+
+    {
+      "id": 4,
+      "firstName": "Shyam",
+      "lastName": "Karki",
+      "email": "shyam@gmail.com",
+      "phone": "9800000004",
+      "department": "Operations",
+      "designation": "Operations Manager",
+      "salary": 72000,
+      "joiningDate": "2022-06-20",
+      "status": "Active"
+    },
+
+    {
+      "id": 5,
+      "firstName": "Sita",
+      "lastName": "Adhikari",
+      "email": "sita@gmail.com",
+      "phone": "9800000005",
+      "department": "HR",
+      "designation": "HR Executive",
+      "salary": 45000,
+      "joiningDate": "2024-03-01",
+      "status": "Inactive"
+    },
+
+    {
+      "id": 6,
+      "firstName": "Krishna",
+      "lastName": "Bhattarai",
+      "email": "krishna@gmail.com",
+      "phone": "9800000006",
+      "department": "Finance",
+      "designation": "Finance Analyst",
+      "salary": 58000,
+      "joiningDate": "2023-07-15",
+      "status": "Active"
+    },
+
+    {
+      "id": 7,
+      "firstName": "Gita",
+      "lastName": "Rai",
+      "email": "gita@gmail.com",
+      "phone": "9800000007",
+      "department": "Sales",
+      "designation": "Sales Executive",
+      "salary": 42000,
+      "joiningDate": "2024-12-01",
+      "status": "Active"
+    }
+  ]
+}
