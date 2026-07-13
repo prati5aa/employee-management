@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   Mail, 
   Phone, 
@@ -38,8 +38,8 @@ const EmployeeCard = () => {
   };
 
   // Status Badge Component
-  const StatusBadge = ({ status }) => {
-    const statusMap = {
+  const StatusBadge = ({ status }: { status?: string }) => {
+    const statusMap: Record<string, { bg: string; text: string; dot: string; icon: typeof CheckCircle; label: string }> = {
       active: { 
         bg: 'bg-emerald-50', 
         text: 'text-emerald-700', 
@@ -63,7 +63,7 @@ const EmployeeCard = () => {
       }
     };
 
-    const config = statusMap[status] || statusMap.active;
+    const config = statusMap[status ?? 'active'] || statusMap.active;
     const Icon = config.icon;
 
     return (

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Sidebar from '../components/Sidebar'
 import EmployeeTable from '../components/EmployeeTable'
 

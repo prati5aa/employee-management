@@ -2,13 +2,13 @@ import api from "../api/api";
 import { ENDPOINTS } from "../api/ends";
 import type { Employee } from "../model/Employee";
 
-export const EmployeeRepository = {
+export const  EmployeeRepository = {
   async getEmployees(): Promise<Employee[]> {
     const response = await api.get<Employee[]>(ENDPOINTS.EMPLOYEES);
 
     return response.data;
   },
-  
+
   async getEmployeeById(id: number): Promise<Employee> {
     const response = await api.get<Employee>(`${ENDPOINTS.EMPLOYEES}/${id}`);
 

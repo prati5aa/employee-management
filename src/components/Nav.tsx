@@ -1,5 +1,4 @@
 import { Bell, ChevronDown, Grid, Menu, Search, Sun } from 'lucide-react'
-import React from 'react'
 
 const Nav = () => {
   return (

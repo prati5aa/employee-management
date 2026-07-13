@@ -1,16 +1,15 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "email": "admin@gmail.com",
       "password": "password",
       "name": "Admin"
     }
   ],
-
   "employees": [
     {
-      "id": 1,
+      "id": "1",
       "firstName": "Pratik",
       "lastName": "Thapa",
       "email": "pratik@gmail.com",
@@ -21,9 +20,8 @@
       "joiningDate": "2025-01-15",
       "status": "Active"
     },
-
     {
-      "id": 2,
+      "id": "2",
       "firstName": "Sweta",
       "lastName": "Sharma",
       "email": "sweta@gmail.com",
@@ -34,9 +32,8 @@
       "joiningDate": "2024-08-10",
       "status": "Active"
     },
-
     {
-      "id": 3,
+      "id": "3",
       "firstName": "Ram",
       "lastName": "Poudel",
       "email": "ram@gmail.com",
@@ -47,9 +44,8 @@
       "joiningDate": "2023-11-05",
       "status": "Active"
     },
-
     {
-      "id": 4,
+      "id": "4",
       "firstName": "Shyam",
       "lastName": "Karki",
       "email": "shyam@gmail.com",
@@ -60,9 +56,8 @@
       "joiningDate": "2022-06-20",
       "status": "Active"
     },
-
     {
-      "id": 5,
+      "id": "5",
       "firstName": "Sita",
       "lastName": "Adhikari",
       "email": "sita@gmail.com",
@@ -73,9 +68,8 @@
       "joiningDate": "2024-03-01",
       "status": "Inactive"
     },
-
     {
-      "id": 6,
+      "id": "6",
       "firstName": "Krishna",
       "lastName": "Bhattarai",
       "email": "krishna@gmail.com",
@@ -86,9 +80,8 @@
       "joiningDate": "2023-07-15",
       "status": "Active"
     },
-
     {
-      "id": 7,
+      "id": "7",
       "firstName": "Gita",
       "lastName": "Rai",
       "email": "gita@gmail.com",
@@ -98,6 +91,31 @@
       "salary": 42000,
       "joiningDate": "2024-12-01",
       "status": "Active"
+    },
+    {
+      "id": "t0OBrxGZiz4",
+      "firstName": "Srijan",
+      "lastName": "kc",
+      "email": "srijan@gmail.com",
+      "phone": "+9779844755110",
+      "department": "IT",
+      "designation": "Software Engineer",
+      "salary": 20000,
+      "joiningDate": "2026-07-15",
+      "status": "Active"
+    },
+    {
+      "id": "fApHod_obLM",
+      "firstName": "ritik",
+      "lastName": "shrestha",
+      "email": "thapapratik6@gmail.com",
+      "phone": "+9779844755111",
+      "department": "IT",
+      "designation": "Software Engineer",
+      "salary": 34555,
+      "joiningDate": "2026-07-10",
+      "status": "Active"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

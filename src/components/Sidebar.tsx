@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { 
   LayoutDashboard, 
   Users, 
@@ -11,15 +13,34 @@ import {
   Search,
   BarChart3,
   Calendar,
-  FileText,
   MessageSquare,
   FolderKanban,
-  Bell
 } from 'lucide-react';
+import type { AppDispatch } from '../app/store';
+import { signOut } from '../store/auth/authThunk';
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch<AppDispatch>();
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [activeItem, setActiveItem] = useState('dashboard');
+
+  const handleNavigation = (itemId: string) => {
+    setActiveItem(itemId);
+
+    if (itemId === 'dashboard') {
+      navigate('/dashboard');
+    } else if (itemId === 'employees') {
+      navigate('/employee');
+    } else if (itemId === 'add-employee') {
+      navigate('/employee/new');
+    }
+  };
+
+  const handleLogout = () => {
+    dispatch(signOut());
+    navigate('/');
+  };
 
   // Menu items
   const menuItems = [
@@ -86,7 +107,7 @@ const Sidebar = () => {
             return (
               <button
                 key={item.id}
-                onClick={() => setActiveItem(item.id)}
+                onClick={() => handleNavigation(item.id)}
                 className={`
                   w-full flex items-center gap-3 px-3 py-2.5 rounded-xl
                   transition-all duration-200 relative group
@@ -172,14 +193,17 @@ const Sidebar = () => {
           
           {!isCollapsed && (
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-medium text-slate-800 truncate">John Doe</p>
+              <p className="text-sm font-medium text-slate-800 truncate">Admin</p>
               <p className="text-xs text-slate-400 truncate">Administrator</p>
             </div>
           )}
         </div>
 
         {/* Logout Button */}
-        <button className={`
+        <button
+          type="button"
+          onClick={handleLogout}
+          className={`
           w-full flex items-center gap-3 px-3 py-2.5 rounded-xl
           text-red-600 hover:bg-red-50 transition-all duration-200 relative group
           ${isCollapsed ? 'justify-center' : 'justify-start'}

@@ -9,8 +9,9 @@ export const AuthRepository = {
         const response =
             await api.get<User[]>(`${ENDPOINTS.LOGIN}?email=${email}&password=${password}` );
 
-        return response.data.length
-            ? response.data[0]
-            : null;
+        if( response.data.length>0)
+            {return response.data[0]}
+        else
+           return  null;
     },
 };
